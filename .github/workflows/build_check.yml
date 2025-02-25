@@ -25,8 +25,4 @@ jobs:
           run: flutter analyze
 
         - name: Test
-          run: flutter test --no-fail-on-empty-test
-
-        - name: Check if all tests passed
-          if: failure()
-          run: exit 1
+          run: flutter test
